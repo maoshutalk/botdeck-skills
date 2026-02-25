@@ -6,25 +6,25 @@
 
 ## English
 
+### 🚀 Quick Start
+
+Paste this in OpenClaw to install the BotDeck skill suite automatically:
+
+```
+Install this skill: https://github.com/maoshutalk/botdeck-skills/blob/main/botdeck-install/SKILL.md
+```
+
+Done! OpenClaw will install everything automatically.
+
 ### 📚 What are Skills?
 
 Skills are predefined instruction sets for OpenClaw AI agents to automatically complete specific tasks.
 
 ### 📋 Available Skills
 
-| Skill       | What it does                             | Usage                                                                                                                                                     |
-| ----------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Botdeck** | Install BotDeck MCP Server + HTTP Bridge | Copy `[@maoshutalk/botdeck-skills/botdeck-install/SKILL.md](https://github.com/maoshutalk/botdeck-skills/blob/main/botdeck-install/SKILL.md)` to OpenClaw |
-
-### 🚀 How to Use
-
-**Just paste this in OpenClaw:**
-
-```
-https://github.com/maoshutalk/botdeck-skills/blob/main/botdeck-install/SKILL.md
-```
-
-Done! OpenClaw will install everything automatically.
+| Skill       | What it does                             | Details                            |
+| ----------- | ---------------------------------------- | ---------------------------------- |
+| **Botdeck** | Install BotDeck MCP Server + HTTP Bridge | [View](./botdeck-install/SKILL.md) |
 
 ### 🤝 Contributing
 
@@ -38,25 +38,25 @@ Welcome to submit new OpenClaw skills! Each skill should include:
 
 ## Chinese
 
+### 🚀 使用方法
+
+直接在 OpenClaw 中粘贴以下内容：
+
+```
+Install this skill: https://github.com/maoshutalk/botdeck-skills/blob/main/botdeck-install/SKILL.md
+```
+
+完成！OpenClaw 会自动安装所有内容。
+
 ### 📚 什么是 Skills？
 
 Skills 是为 OpenClaw AI agents 预定义的指令集，帮助自动完成特定任务。
 
 ### 📋 可用 Skills
 
-| Skill       | 功能                                  | 使用方法                                                                                                                                                  |
-| ----------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Botdeck** | 安装 BotDeck MCP Server + HTTP Bridge | 复制 `[@maoshutalk/botdeck-skills/botdeck-install/SKILL.md](https://github.com/maoshutalk/botdeck-skills/blob/main/botdeck-install/SKILL.md)` 到 OpenClaw |
-
-### 🚀 使用方法
-
-**直接在 OpenClaw 中粘贴：**
-
-```
-https://github.com/maoshutalk/botdeck-skills/blob/main/botdeck-install/SKILL.md
-```
-
-完成！OpenClaw 会自动安装所有内容。
+| Skill       | 功能                                  | 详情                               |
+| ----------- | ------------------------------------- | ---------------------------------- |
+| **Botdeck** | 安装 BotDeck MCP Server + HTTP Bridge | [查看](./botdeck-install/SKILL.md) |
 
 ### 🤝 贡献
 
