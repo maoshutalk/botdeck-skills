@@ -43,7 +43,7 @@ Welcome to submit new OpenClaw skills! Each skill should include:
 直接在 OpenClaw 中粘贴以下内容：
 
 ```
-Install this skill: https://github.com/maoshutalk/botdeck-skills/blob/main/botdeck-install/SKILL.md
+安装这个 skill: https://github.com/maoshutalk/botdeck-skills/blob/main/botdeck-install/SKILL.md
 ```
 
 完成！OpenClaw 会自动安装所有内容。
