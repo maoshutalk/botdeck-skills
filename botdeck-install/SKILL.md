@@ -2,60 +2,50 @@
 
 ## Mission
 
-Install BotDeck MCP Server automatically. Complete all steps without asking the user.
+**Auto-complete these 3 steps:**
+1. Install BotDeck MCP
+2. Run on port 3000
+3. Test ping → report result
 
-**Three Goals:**
-1. ✅ Install BotDeck MCP Server
-2. ✅ Run it successfully on port 3000
-3. ✅ Test ping connection
-
-**Report to user only after everything is done.**
+**Do NOT ask user. Execute everything automatically.**
 
 ---
 
-## Auto-Installation Steps
+## Installation Commands
 
-Execute these steps automatically:
-
-### 1. Clone Repository
+### Step 1: Clone Repository
 
 ```bash
-# Clone to desktop or code directory
-git clone https://github.com/maoshutalk/botdeck-mcp
-cd botdeck-mcp
+# IMPORTANT: Clone to Desktop or your code directory
+git clone https://github.com/maoshutalk/botdeck-mcp ~/Desktop/botdeck-mcp
+cd ~/Desktop/botdeck-mcp
 
-# If git not available: download https://github.com/maoshutalk/botdeck-mcp/archive/refs/heads/main.zip and extract
+# Or if no git: download https://github.com/maoshutalk/botdeck-mcp/archive/refs/heads/main.zip
 ```
 
-### 2. Install Dependencies
+### Step 2: Install & Configure
 
 ```bash
 npm install
-```
 
-### 3. Configure Environment
-
-Create `.env` file:
-
-```env
+# Create .env file
+cat > .env << EOF
 BOTDECK_API_URL=https://botdeck-portal.smtc.io/api/v1
 BOTDECK_API_TOKEN=your_api_token_here
 MCP_SERVER_PORT=3000
+EOF
 ```
 
-### 4. Start Server
+### Step 3: Start Server
 
 ```bash
 npm run dev
 ```
 
-Server must run on port 3000.
+### Step 4: Configure Cursor
 
-### 5. Setup Cursor MCP
-
-Add to `~/.cursor/mcp.json`:
-
-```json
+```bash
+# Add to ~/.cursor/mcp.json
 {
   "mcpServers": {
     "botdeck": {
@@ -65,64 +55,54 @@ Add to `~/.cursor/mcp.json`:
 }
 ```
 
-### 6. Test Connection
+### Step 5: Test Connection
 
-Send ping command to verify connection works.
-
-Expected result: `pong`
+Send ping command. Expect: `pong`
 
 ---
 
-## Auto-Fix Common Issues
+## Auto-Fix Issues
 
-**Handle these automatically without asking:**
+- Port busy → kill process or change port
+- npm fails → `npm cache clean --force && npm install`
+- No git → download ZIP
+- Permission error → try different location
 
-- **Port 3000 busy**: Kill the process or use another port
-- **npm fails**: Clear cache and retry: `npm cache clean --force && npm install`
-- **No git**: Download ZIP instead
-- **Permission error**: Adjust permissions or try alternative location
-
-**Make decisions yourself. Don't ask user for next steps.**
+**Make decisions yourself. Don't ask.**
 
 ---
 
-## Final Report
-
-After completing all steps, tell the user:
+## Report to User
 
 ```
-✅ Installation Complete
+✅ Done
 
-📦 Skill Location: [where this skill was loaded from]
-📍 MCP Location: [where botdeck-mcp was installed]
-🚀 Server Status: Running on port 3000
-🔗 MCP Config: [mcp.json path]
-✓ Ping Test: Success
+Skill: [this skill location]
+MCP: [botdeck-mcp installed at]
+Server: Running on port 3000
+Test: Ping success ✓
 
-Next: Please restart Cursor IDE to activate BotDeck tools.
+→ Restart Cursor to use BotDeck tools
 ```
 
-**If anything fails, report:**
+**If failed:**
 ```
-❌ Installation Failed
-
-Error: [what went wrong]
-Attempted: [what you tried]
-Need: [what's required to fix]
+❌ Failed: [error]
+Issue: [what the user encountered]
+Tried: [what you did]
 ```
 
 ---
 
-## Important Rules
+## Important
 
-1. **AUTO-EXECUTE** - Do everything automatically
-2. **NO QUESTIONS** - Make decisions yourself
-3. **TEST BEFORE REPORT** - Verify ping works
-4. **CLEAR SUMMARY** - Tell user exactly what happened
+**Always respond in the user's language.**
 
 ---
 
-## Resources
+## Rules
 
-- 🌐 [BotDeck Portal](https://botdeck-portal.smtc.io/)
-- 📦 [GitHub Repo](https://github.com/maoshutalk/botdeck-mcp)
+1. AUTO-EXECUTE all steps
+2. NO QUESTIONS to user
+3. TEST before reporting
+4. REPORT absolute paths clearly
